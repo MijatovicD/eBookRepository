@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <meta charset="UTF-8"><script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/book.js"></script>
+    <title>eBooks</title>
+</head>
+<body>
+<nav class="topnav">
+    <a href="Login.html">Login</a>
+    <form method="POST" id="luceneTermQuery">
+        <lable style="color: white">Search by</lable>
+        <select id="searchSelect" name="searchSelect">
+            <option id="titleO">title</option>
+            <option id="authorO">author</option>
+            <option id="keywordO">keyword</option>
+            <option id="mimeO">Mime</option>
+            <option id="languageO">language</option>
+        </select>
+        <input type="text" id="search" name="search">
+        <input type="button" id="btnSearch" value="Search">
+    </form>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="panel panel-primary filterable">
+            <div class="panel-heading">
+                <h3 class="panel-title">Books</h3>
+                <div class="pull-right">
+                </div>
+            </div>
+            <table id="ebookTable">
+                <thead>
+                <tr class="filters">
+                    <th><input type="text" class="form-control" placeholder="Title" disabled></th>
+                    <th><input type="text" class="form-control" placeholder="Author" disabled></th>
+                    <th><input type="text" class="form-control" placeholder="Keywords" disabled></th>
+                    <th><input type="text" class="form-control" placeholder="Publication year" disabled></th>
+                    <th><input type="text" class="form-control" placeholder="Filename" disabled></th>
+                    <th><input type="text" class="form-control" placeholder="MIME" disabled></th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

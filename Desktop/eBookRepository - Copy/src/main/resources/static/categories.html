@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>.
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/categories.js"></script>
+    <title>Flights</title>
+</head>
+<body>
+<nav class="topnav">
+    <a href="AddCategory.html" id="addCategory">Add category</a>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="panel panel-primary filterable">
+            <div class="panel-heading">
+                <h3 class="panel-title">Categories</h3>
+                <div class="pull-right">
+                    <div class="search-container">
+                        <form>
+                            <input type="text" placeholder="Search categories"  id="searchFlight"  name="search">
+                            <input type="button" class="searchBtn" id="searchBtn" value="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <table id="categoriesTable">
+                <thead>
+                <tr class="filters">
+                    <th><input type="text" class="form-control" placeholder="Id" disabled></th>
+                    <th><input type="text" class="form-control" placeholder="Name" disabled></th>
+                </tr>
+                </thead>+
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

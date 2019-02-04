@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/addBook.css">
+    <meta charset="UTF-8"><script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/editBook.js"></script>
+    <title>Edit book</title>
+</head>
+<html>
+<body>
+<div class="container">
+    <div class="row main">
+        <div class="main-login main-center">
+            <h5>Add eBook</h5>
+            <form method="POST" enctype="multipart/form-data" id="fileUploadForm">
+
+                <div class="form-group">
+                    <label class="cols-sm-2 control-label">Title</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="title" id="title"  placeholder="Enter book title"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="cols-sm-2 control-label">Keywords</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="keywords" id="keywords"  placeholder="Enter keywords"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label  class="cols-sm-2 control-label">Author</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="author" id="author"  placeholder="Enter author"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label  class="cols-sm-2 control-label">Publication year</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="publicationYear" id="publicationYear"  placeholder="Enter publication year"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label  class="cols-sm-2 control-label">Browse a file</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <input type="file" class="form-control" name="files"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label  class="cols-sm-2 control-label">MIME</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="MIME" id="mime"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label  class="cols-sm-2 control-label">Categories</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <select id="categories" name="category">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Submit" id="btnSubmit"/>
+            </form>
+        </div>
+    </div>
+</div>
+<!--
+<form method="POST" enctype="multipart/form-data" id="fileUploadForm">
+    <input type="text" name="title" placeholder="title"/><br/><br/>
+    <input type="text" name="keywords" placeholder="keywords"/><br/><br/>
+    <input type="text" name="author" placeholder="author"/><br/><br/>
+    <input type="text" name="year" placeholder="publication year"/><br/><br/>
+    <input type="file" name="files"/><br/><br/>
+    <input type="text" name="mime" placeholder="MIME"/><br/><br/>
+    <select id="categories" name="category">
+    </select><br>
+    <input type="submit" value="Submit" id="btnSubmit"/>
+</form>
+
+<form method="POST" id="luceneTermQuery">
+    <input type="text" name="field" placeholder="field" /><br/><br/>
+    <input type="text" name="value" placeholder="value" /><br/><br/>
+    <input type="submit" value="Submit" id="btnSubmitLuceneTermQuery"/>
+</form>
+<pre>
+    <span id="result"></span>
+</pre>
+-->
+</body>
+</html>

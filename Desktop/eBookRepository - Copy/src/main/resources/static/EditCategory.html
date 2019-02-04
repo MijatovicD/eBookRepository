@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>.
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/addBook.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/editCategory.js"></script>
+    <title>Edit category</title>
+</head>
+<body>
+<nav class="topnav">
+    <a href="Book.html">Home page</a>
+</nav>
+<div class="container">
+    <div class="row main">
+        <div class="main-login main-center">
+            <h5>Add category</h5>
+            <form method="POST" id="editCategory">
+
+                <div class="form-group">
+                    <label class="cols-sm-2 control-label">Name</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="name" id="name"  placeholder="Enter name of category"/>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Submit" id="btnSubmit"/>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
